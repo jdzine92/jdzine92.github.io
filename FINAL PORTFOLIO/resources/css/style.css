@@ -1,0 +1,521 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #201e2f;
+  background-color: #d3d0f2;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-width: 400px;
+  margin: 0;
+  height: 15rem;
+  background-image: url(../img/header-large.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid #201e2f;
+  z-index: 9;
+}
+
+h1 {
+  position: relative;
+  top: 0.5rem;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke-width: 0.01rem;
+  -webkit-text-stroke-color: #201e2f;
+  letter-spacing: 0.6rem;
+  opacity: 0.65;
+}
+
+/* MOVING LETTERS */
+
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+nav {
+  position: relative;
+  top: 3rem;
+  min-width: 400px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  width: 130px;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+  padding: 0.5rem;
+  color: #201e2f;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  transition: background-color 1s, color 1s;
+  border-radius: 10px;
+}
+
+nav li:hover {
+  color: #fff;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  transition: background-color 1s, color 1s;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #201e2f;
+  transition: color 1s;
+}
+
+nav li a:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 1s, color 1s;
+}
+
+.progress-container {
+  position: fixed;
+  width: 100%;
+  height: 8px;
+  background: #d3d0f2;
+  z-index: 8;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #11111a;
+  width: 0%;
+}
+
+main {
+  margin: 0 auto;
+  margin-top: 15rem;
+  width: 85%;
+  max-width: 1000px;
+  min-width: 300px;
+  background-color: #d3d0f2;
+}
+
+#desktop-h2 {
+  width: 74%;
+  margin: 0;
+  padding: 2rem 0rem 0rem 2rem;
+  font-family: "Alfa Slab One", cursive;
+  letter-spacing: 0.06rem;
+}
+
+#mobile-h2 {
+  display: none;
+}
+
+h3 {
+  margin: 0;
+  padding: 2rem 0rem 0rem 2rem;
+}
+
+hr {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border: 1px solid #201e2f;
+}
+
+#profile {
+  background-image: url(../img/gitprofilebw.jpg);
+  background-repeat: no-repeat;
+  border-radius: ;
+  margin: 2rem 1rem 1rem 1rem;
+  height: 226px;
+  width: 208px;
+  float: right;
+  border: 0.3rem solid #201e2f;
+  border-radius: 5px;
+  transition: background-image 0.5s, border-color 0.5s;
+}
+
+#profile:hover {
+  background-image: url(../img/gitprofile.jpg);
+  background-repeat: no-repeat;
+  border-color: #455a96;
+  transition: background-image 0.5s, border-color 0.5s;
+  cursor: pointer;
+}
+
+#intro {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0rem 2rem;
+  line-height: 1.8rem;
+  text-align: justify;
+}
+
+#skillsets {
+  display: inline-block;
+  width: 85%;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #201e2f;
+  border-radius: 5px;
+}
+
+#skillsets-p {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  color: #fff;
+  font-variant: small-caps;
+  font-size: 1.1rem;
+}
+
+.emptybar {
+  height: 22px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #d3d0f2;
+  margin-bottom: 0.5rem;
+}
+
+.emptybar > div {
+  height: 22px;
+  width: 0%;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.2rem 0rem 0.2rem 0rem;
+  border-radius: 5px;
+  color: #201e2f;
+  background-color: #d3d0f2;
+  transition: width 1s, background-color 1s;
+}
+
+#key {
+  height: 0.4rem;
+  width: 100%;
+  background: linear-gradient(0.25turn, red, orange, yellow, green);
+  border-radius: 10px;
+  animation: key 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes key {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+#html:hover {
+  width: 95%;
+  color: #fff;
+  background-color: #455a96;
+  transition: width 1s, background-color 1s;
+  cursor: pointer;
+}
+
+#css:hover {
+  width: 90%;
+  color: #fff;
+  background-color: #455a96;
+  transition: width 1s, background-color 1s;
+  cursor: pointer;
+}
+
+#js:hover {
+  width: 45%;
+  color: #fff;
+  background-color: #455a96;
+  transition: width 1s, background-color 1s;
+  cursor: pointer;
+}
+
+#react:hover {
+  width: 25%;
+  color: #fff;
+  background-color: #455a96;
+  transition: width 1s, background-color 1s;
+  cursor: pointer;
+}
+
+#node:hover {
+  width: 20%;
+  color: #fff;
+  background-color: #455a96;
+  transition: width 1s, background-color 1s;
+  cursor: pointer;
+}
+
+#python:hover {
+  width: 60%;
+  color: #fff;
+  background-color: #455a96;
+  transition: width 1s, background-color 1s;
+  cursor: pointer;
+}
+
+#php:hover {
+  width: 40%;
+  color: #fff;
+  background-color: #455a96;
+  transition: width 1s, background-color 1s;
+  cursor: pointer;
+}
+
+#java:hover {
+  width: 10%;
+  color: #fff;
+  background-color: #455a96;
+  transition: width 1s, background-color 1s;
+  cursor: pointer;
+}
+
+#csharp:hover {
+  width: 60%;
+  color: #fff;
+  background-color: #455a96;
+  transition: width 1s, background-color 1s;
+  cursor: pointer;
+}
+
+#sql:hover {
+  width: 15%;
+  color: #fff;
+  background-color: #455a96;
+  transition: width 1s, background-color 1s;
+  cursor: pointer;
+}
+
+#photoshop:hover {
+  width: 85%;
+  color: #fff;
+  background-color: #455a96;
+  transition: width 1s, background-color 1s;
+  cursor: pointer;
+}
+
+#projects-container {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+#projects-container > div {
+  margin: 0.5rem;
+  width: 460px;
+  height: 300px;
+  border: 2px solid #201e2f;
+  border-radius: 5px;
+  position: relative;
+  z-index: 0;
+}
+
+#projects-container > div:hover {
+  animation: project-hover 1s;
+  -webkit-animation-fill-mode: forwards; /*stops animation reverting */
+}
+
+@keyframes project-hover {
+  from {
+    transform: scale(100%, 100%);
+  }
+  to {
+    transform: scale(105%, 105%);
+  }
+}
+
+footer {
+  background-color: #11111a;
+  width: 100%;
+  height: 9rem;
+}
+
+footer p {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#backtotop {
+  background-image: url(../img/backtotop.png);
+  background-repeat: no-repeat;
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  position: relative;
+  top: 1rem;
+}
+
+#github {
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  position: relative;
+  top: 2rem;
+}
+
+#backtotop:hover,
+#github:hover {
+  cursor: pointer;
+  animation: footer-hover 1s;
+  -webkit-animation-fill-mode: forwards; /*stops animation reverting */
+}
+
+@keyframes footer-hover {
+  from {
+    transform: scale(100%, 100%);
+  }
+  to {
+    transform: scale(110%, 110%);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header {
+    height: 5rem;
+  }
+
+  .ml6 .letters {
+    display: none;
+  }
+
+  .ml6 {
+    display: none;
+  }
+
+  nav {
+    top: 1.4rem;
+  }
+
+  nav ul {
+    text-align: left;
+  }
+
+  nav li {
+    font-size: 1.2rem;
+    width: 95px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .progress-container {
+    top: 5rem;
+  }
+
+  .progress-bar {
+    top: 5rem;
+  }
+
+  #desktop-h2 {
+    display: none;
+  }
+
+  #mobile-h2 {
+    display: inherit;
+    margin: 0;
+    padding: 1rem 0rem 0rem 2rem;
+    font-family: "Alfa Slab One", cursive;
+    letter-spacing: 0.06rem;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  main {
+    margin-top: 5rem;
+    margin: auto;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  #profile {
+    background-size: cover;
+    float: none;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+
+  #intro {
+    margin-top: 1.5rem;
+  }
+
+  #skillsets {
+    width: 95%;
+    margin: auto;
+    border-radius: 0;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  #projects-container > div {
+    margin: 0.5rem;
+    width: 500px;
+    height: 300px;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+}
