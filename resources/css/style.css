@@ -20,7 +20,7 @@ body {
 
 header {
   width: 100%;
-  min-height: 1000px;
+  min-height: 900px;
   margin: 0;
   background-image: url(../img/header-large-bg.png);
   background-repeat: repeat-x;
@@ -220,7 +220,7 @@ main {
   display: none;
 }
 
-#desktop-h3-hdr {
+#desktop-header-text {
   width: 85%;
   margin: auto;
   padding: 2rem 0rem 1rem 2rem;
@@ -233,18 +233,13 @@ main {
   animation: fadeInh3 5s;
 }
 
-#mobile-h3-hdr {
+#mobile-header-text {
   display: none;
 }
 
 #mobile-h2 {
   width: 85%;
   display: none;
-}
-
-h3 {
-  margin: 0;
-  padding: 2rem 0rem 0rem 2rem;
 }
 
 hr {
@@ -416,6 +411,7 @@ hr {
 #projects-container > div img {
   opacity: 0.5;
   transition: opacity 1s ease;
+  border-radius: 5px;
 }
 
 #projects-container > div img:hover {
@@ -491,7 +487,18 @@ footer a {
 }
 
 /* MEDIA STYLES */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 799px) {
+  .aboutBtn {
+    display: none;
+  }
+
+  header {
+    /* reduce height to accomodate smaller vertical dimension */
+    min-height: 700px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
   /* removes header letters from screen */
   .ml6 .letters {
     display: none;
@@ -501,18 +508,9 @@ footer a {
     display: none;
   }
 
+  /* REMOVE NAV FROM SMALL MOBILES */
   nav {
-    top: 2rem;
-  }
-
-  nav ul {
-    text-align: center;
-  }
-
-  nav li {
-    font-size: 1.2rem;
-    margin-left: 15px;
-    margin-right: 15px;
+    display: none;
   }
 
   header {
@@ -520,19 +518,18 @@ footer a {
     min-height: 700px;
   }
 
-  #desktop-h3-hdr {
+  #desktop-header-text {
     display: none;
   }
 
-  #mobile-h3-hdr {
+  #mobile-header-text {
     display: block;
     width: 85%;
     margin: auto;
-    margin-top: 320px;
-    padding: 2rem;
+    padding-top: 100px;
     font-family: "Alfa Slab One", cursive;
     letter-spacing: 0.06rem;
-    color: #11111a;
+    color: #d3d0f2;
     font-size: 1.4rem;
     font-weight: 200;
     text-align: center;
@@ -578,6 +575,7 @@ footer a {
 
   #mobile-recent-projects {
     display: block;
+    padding-left: 1rem;
     width: 100%;
     font-family: "Alfa Slab One", cursive;
     font-size: 1.1rem;
