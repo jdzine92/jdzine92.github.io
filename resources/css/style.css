@@ -20,7 +20,7 @@ body {
 
 header {
   width: 100%;
-  min-width: 400px;
+  min-width: 370px;
   min-height: 1000px;
   margin: 0;
   background-image: url(../img/header-large-bg.png);
@@ -136,8 +136,8 @@ h1 {
 nav {
   position: relative;
   top: 3rem;
-  width: 85%;
-  min-width: 400px;
+  width: 100%;
+  min-width: 370px;
   z-index: 2;
 }
 
@@ -159,7 +159,6 @@ nav li {
   font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 0.1rem;
-  text-align: center;
   transition: background-color 1s, color 1s;
   border-radius: 10px;
 }
@@ -212,12 +211,16 @@ main {
   letter-spacing: 0.06rem;
 }
 
-#desktop-h3 {
+#desktop-recent-projects {
   width: 85%;
   margin: auto;
   padding: 2rem 0rem 1rem 2rem;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.06rem;
+}
+
+#mobile-recent-projects {
+  display: none;
 }
 
 #desktop-h3-hdr {
@@ -502,7 +505,7 @@ footer a {
   }
 
   nav {
-    top: 1.4rem;
+    top: 2rem;
   }
 
   nav ul {
@@ -511,9 +514,13 @@ footer a {
 
   nav li {
     font-size: 1.2rem;
-    width: 95px;
     margin-left: 15px;
     margin-right: 15px;
+  }
+
+  header {
+    /* reduce height to accomodate smaller vertical dimension */
+    min-height: 700px;
   }
 
   #desktop-h3-hdr {
@@ -554,34 +561,46 @@ footer a {
     text-align: center;
   }
 
-  h3 {
-    font-size: 1rem;
-    text-align: center;
-    padding-left: 0;
-  }
-
   #intro {
-    margin-top: 1.5rem;
+    width: 100%;
   }
 
+  /* 100% width skillsets */
   #skillsets {
-    width: 95%;
+    width: 100%;
     margin: auto;
     border-radius: 0;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    padding: 2rem;
+  }
+
+  /* recent projects text title */
+  #desktop-recent-projects {
+    display: none;
+  }
+
+  #mobile-recent-projects {
+    display: block;
+    width: 100%;
+    font-family: "Alfa Slab One", cursive;
+    font-size: 1.1rem;
+    letter-spacing: 0.06rem;
+  }
+
+  /* 100% width projects */
+  #projects-container {
+    width: 100%;
   }
 
   #projects-container > div {
     margin: 0.5rem;
-    width: 350px;
+    width: 100%;
     height: auto;
   }
 
   #projects-container > div img {
     opacity: 0.5;
     transition: opacity 1s ease;
-    width: 350px;
+    width: 100%;
     height: auto;
   }
 
