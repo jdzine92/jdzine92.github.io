@@ -237,6 +237,10 @@ main {
   display: none;
 }
 
+#mobile-header-text-sub {
+  display: none;
+}
+
 #mobile-h2 {
   width: 85%;
   display: none;
@@ -523,7 +527,28 @@ footer a {
     font-family: "Alfa Slab One", cursive;
     letter-spacing: 0.06rem;
     color: #d3d0f2;
-    font-size: 1.4rem;
+    font-size: 2.5rem;
+    font-weight: 200;
+    text-align: center;
+    opacity: 75%;
+    animation: fadeInh3 5s;
+    -webkit-text-stroke: 0.5px #d3d0f2;
+    -webkit-text-fill-color: transparent;
+  }
+
+  #mobile-header-text-sub {
+    display: none;
+  }
+
+  #mobile-header-text-sub {
+    display: block;
+    width: 85%;
+    margin: auto;
+    padding-top: 10px;
+    font-family: "Alfa Slab One", cursive;
+    letter-spacing: 0.06rem;
+    color: #d3d0f2;
+    font-size: 1.5rem;
     font-weight: 200;
     text-align: center;
     opacity: 75%;
