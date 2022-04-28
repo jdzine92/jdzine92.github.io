@@ -586,12 +586,16 @@ footer a {
     width: 100%;
     height: auto;
   }
-
+  /* remove hover and opacity on mobile as non functional on safari */
   #projects-container > div img {
-    opacity: 0.5;
-    transition: opacity 1s ease;
+    opacity: 1;
+    transition: none;
     width: 100%;
     height: auto;
+  }
+
+  #projects-container > div > p {
+    display: none;
   }
 
   footer p {
