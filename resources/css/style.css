@@ -274,6 +274,10 @@ main {
   font-size: 1.1rem;
 }
 
+#skillsets-p-mobile {
+  display: none;
+}
+
 .emptybar {
   height: 22px;
   width: 100%;
@@ -337,7 +341,7 @@ main {
 }
 
 #python:hover {
-  width: 60%;
+  width: 65%;
   color: #fff;
   background-color: #78759c;
   transition: width 1s, background-color 1s;
@@ -353,7 +357,7 @@ main {
 }
 
 #java:hover {
-  width: 50%;
+  width: 45%;
   color: #fff;
   background-color: #78759c;
   transition: width 1s, background-color 1s;
@@ -361,7 +365,7 @@ main {
 }
 
 #csharp:hover {
-  width: 60%;
+  width: 65%;
   color: #fff;
   background-color: #78759c;
   transition: width 1s, background-color 1s;
@@ -369,7 +373,7 @@ main {
 }
 
 #sql:hover {
-  width: 15%;
+  width: 35%;
   color: #fff;
   background-color: #78759c;
   transition: width 1s, background-color 1s;
@@ -585,6 +589,78 @@ footer a {
     padding: 2rem;
     overflow-x: hidden;
   }
+  /* remove hover instructions from mobile devices */
+  #skillsets-p {
+    display: none;
+  }
+
+  #skillsets-p-mobile {
+    display: block;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: #fff;
+    font-variant: small-caps;
+    font-size: 1.1rem;
+  }
+
+  /* set skillset width to full by default for mobiles */
+  #html {
+    width: 95%;
+    color: #fff;
+    background-color: #78759c;
+  }
+  #js {
+    width: 45%;
+    color: #fff;
+    background-color: #78759c;
+  }
+  #react {
+    width: 25%;
+    color: #fff;
+    background-color: #78759c;
+  }
+  #python {
+    width: 65%;
+    color: #fff;
+    background-color: #78759c;
+  }
+  #php {
+    width: 40%;
+    color: #fff;
+    background-color: #78759c;
+  }
+  #java {
+    width: 45%;
+    color: #fff;
+    background-color: #78759c;
+  }
+  #csharp {
+    width: 65%;
+    color: #fff;
+    background-color: #78759c;
+  }
+  #sql {
+    width: 35%;
+    color: #fff;
+    background-color: #78759c;
+  }
+  #photoshop {
+    width: 85%;
+    color: #fff;
+    background-color: #78759c;
+  }
+  #html:hover,
+  #js:hover,
+  #react:hover,
+  #python:hover,
+  #php:hover,
+  #java:hover,
+  #csharp:hover,
+  #sql:hover,
+  #photoshop:hover {
+    transition: none;
+  }
 
   /* recent projects text title */
   #desktop-recent-projects {
@@ -625,5 +701,12 @@ footer a {
 
   footer p {
     font-size: 0.9rem;
+  }
+
+  /* transitions non functional on mobile devices, remove */
+  #backtotop,
+  #github {
+    opacity: 1;
+    transition: none;
   }
 }
