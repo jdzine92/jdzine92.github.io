@@ -33,19 +33,6 @@ document.getElementById("backtotop").animate(
   }
 );
 
-//EVENT LISTENERS FOR SCROLL AND RESIZE
-window.addEventListener("scroll", function () {
-  if (window.innerWidth > 600) scroller();
-});
-
-window.addEventListener("resize", function () {
-  if (window.innerWidth < 600) collapse();
-});
-
-window.addEventListener("resize", function () {
-  if (window.innerWidth > 600) expand();
-});
-
 //BACK TO TOP ONCLICK FUNCTION
 document.getElementById("backtotop").onclick = function () {
   backToTop();
