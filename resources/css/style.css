@@ -528,11 +528,10 @@ footer a {
     font-family: "Alfa Slab One", cursive;
     letter-spacing: 0.06rem;
     color: #d3d0f2;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: 200;
     text-align: center;
-    opacity: 75%;
-    animation: fadeInh3 5s;
+    animation: fadeIn 3s;
     -webkit-text-stroke: 0.5px #d3d0f2;
     -webkit-text-fill-color: transparent;
   }
@@ -549,11 +548,10 @@ footer a {
     font-family: "Alfa Slab One", cursive;
     letter-spacing: 0.06rem;
     color: #d3d0f2;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 200;
     text-align: center;
-    opacity: 75%;
-    animation: fadeInh3 5s;
+    animation: fadeIn 3s;
   }
 
   .aboutBtn {
