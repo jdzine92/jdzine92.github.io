@@ -703,4 +703,12 @@ footer a {
     opacity: 1;
     transition: none;
   }
+
+  #backtotop {
+    background-image: url(../img/backtotop-32.png);
+    height: 32px;
+    width: 32px;
+    opacity: 1;
+    transition: none;
+  }
 }
