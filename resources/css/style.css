@@ -202,9 +202,9 @@ main {
 }
 
 #desktop-h2 {
-  width: 85%;
+  max-width: 800px;
   margin: auto;
-  padding: 2rem 0rem 0rem 2rem;
+  padding: 2rem 2rem 0rem 2rem;
   font-family: "Alfa Slab One", cursive;
   letter-spacing: 0.06rem;
 }
@@ -247,7 +247,7 @@ main {
 }
 
 #intro {
-  width: 85%;
+  max-width: 800px;
   margin: auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -255,6 +255,16 @@ main {
   line-height: 1.8rem;
   text-align: justify;
 }
+
+#cert {
+  max-width: 800px;
+  height: 200px;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0rem 2rem;
+}
+
 
 #skillsets {
   max-width: 800px;
